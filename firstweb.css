@@ -1,0 +1,127 @@
+*{margin:0; padding:0;}
+body{
+	
+	background-color:#d4d6c8;
+}
+#wrapper{
+	width:960px;
+	margin:5px auto;
+}
+
+#header{
+	background-color:green;
+	padding:15px;
+	border-bottom:5px solid blue;
+}
+#header h2{
+	font-family:times news roma;
+	color:#cec8c7;
+	text-shadow:2px 2px 2px blue;/* shadow*/
+	
+}
+#header p{
+	color:#caded6;
+	
+}
+
+
+#nav{
+	
+   background-color:red; 
+   height:38px;
+   border-bottom:5px solid blue;
+   
+}
+#nav ul{
+	background-color:red;
+	list-style-type:none;/* যদি কোন লিস্ট ভেতর কোন চিহ্ন থাকে তহলে চলে যাবে */
+	z-index:999;/*এইটার জন্য manu problem ঠিক হয়ে যায়*/
+}
+#nav ul li{
+	float:left; /* যদি এইটা ব্যাবহার করি লিস্ট নিচে নিচে না যেয়ে ডানে ডানে  যাবে*/
+	
+	border-right:1px solid #6B710E;
+	
+}
+#nav ul li:last-child {
+	border:none; /*  একবারে ডানে  element border থাকবে না*/
+
+}
+#nav ul li a{
+	text-decoration:none;/* এইটা না দেলে লিস্ট নিচে আন্ডার লাইন থাকবে*/
+	color:#6B710E;
+	display:block;
+	padding:10px 20px;
+	
+}
+#nav ul li a:hover{
+	color:black; 
+}
+#nav ul li {
+	position:relative;/* এইটার জন্য dropdown হয় */ 
+}
+#nav ul li ul{
+	position:absolute;/* এইটার জন্য dropdown হয় */
+	left:-99999px;
+	
+}
+#nav ul li:hover ul{
+left:0;
+}
+#nav ul li ul li:first-child{
+border-top:1px solid #6B710E;
+}
+#nav ul li ul li {
+	float:none; /* যদি এইটা ব্যাবহার করে  লিস্ট নিচে নিচে  যাবে*/
+	border-right:none;
+	border-bottom:1px solid #6B710E;
+	
+	
+}
+
+#image slider_wraper{
+	
+	
+}
+#content_wrapper{
+	background-color:#fff;
+	/*height:130px;*/
+	overflow:hidden;
+	border-top:5px solid blue;
+	padding:10px;
+	
+}
+#content{
+	width:620px;
+	margin-right:20px;
+	float:left; /* blog 
+}
+#content h2{
+color:#6B710E;
+margin-bottom:5px;
+margin-top:10px;
+}
+#sidebar{
+	width:200px;
+	float:left;
+	
+}
+#sidebar ul{
+list-style-type:circle;
+
+}
+#sidebar ul li a{
+text-decoration:none;
+padding:5px;
+display:block;
+}
+#footer{
+	background-color:black;
+	padding:10px;
+	text-align:center;
+	
+	
+}
+#footer p{
+	color:#fff;
+}

@@ -1,0 +1,49 @@
+#Menu{
+	padding:0;
+	margin:0 auto;
+list-style-type:none;
+width:960px;
+background:#9c27b0;
+border-bottom:3px solid rgb(73, 50, 80);
+min-height:35px;
+}
+#Menu li {
+/*display:inline;*/
+float:left;
+border-right:1px solid black;
+border-left:1px solid black;
+position:relative;
+}
+#Menu li:last-child{
+	border-right:none;
+}
+#Menu li a{
+color:white;
+text-decoration:none;
+background:#9c27b0;
+padding:8px 10px;
+display:block;
+transition:0.3s all ease;
+} 
+#Menu li a:hover{
+background:#493250;}
+p{
+	margin:0 auto;
+	font:italic bold 50px Times News Roma;
+	color:#000000;
+}
+#Menu li ul{
+	list-style-type:none;
+	padding:0;
+	position:absolute;
+	left:-999999px;
+}
+#Menu li:hover ul{
+left:0;
+}
+#Menu li ul li{
+float:none;
+width:150px;
+border-top:1px solid black;
+border-bottom:1px solid black;
+}
